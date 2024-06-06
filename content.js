@@ -1,7 +1,11 @@
+// Sure, here is the complete code:
+
+
 const dark = '#000000';
 const white = 'white';
 const lighter = '#e0e0e0';
 const button = '#3A3A3A';
+
 function load_box() {
     const targetElement = document.querySelector('.job-details-jobs-unified-top-card__job-title');
     if (targetElement) {
@@ -86,6 +90,7 @@ function attach_click_events() {
         });
     });
 }
+
 function load_home_content() {
     let leftBody = document.getElementById("leftBody")
     if (!leftBody) {
@@ -116,7 +121,6 @@ function load_home_content() {
 }
 
 function loadAnalysisRight(data){
-    
     let rightA = document.getElementById('right_div');
     rightA.innerHTML = '';
     const customScrollbarCSS = `
@@ -135,7 +139,6 @@ function loadAnalysisRight(data){
         #right_div::-webkit-scrollbar-track {
             border-radius: 20px;
             background-color: transparent;
-
         }
         #right_div::-webkit-scrollbar-thumb {
             border-radius: 20px;
@@ -205,25 +208,13 @@ function analyze() {
             var applicantsImage = document.createElement('a');
             applicantsImage.innerHTML = `
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <path d="M13.2771 9.81585C14.7963 9.81585 16.0268 8.47865 16.0268 6.83384C16.0268 5.21415 14.8026 3.9209 13.2771 3.9209C11.7704 3.9209 10.5273 5.23298 10.5273 6.8464C10.5336 8.48493 11.7641 9.81585 13.2771 9.81585ZM6.00098 9.96024C7.32562 9.96024 8.39286 8.78627 8.39286 7.33608C8.39286 5.92355 7.32562 4.78097 6.00098 4.78097C4.6889 4.78097 3.60282 5.94238 3.6091 7.34235C3.6091 8.79255 4.68262 9.96024 6.00098 9.96024ZM13.2771 8.71722C12.4107 8.71722 11.6762 7.90109 11.6762 6.84012C11.6762 5.81682 12.4044 5.01953 13.2771 5.01953C14.156 5.01953 14.8779 5.80427 14.8779 6.83384C14.8779 7.88853 14.1497 8.71722 13.2771 8.71722ZM6.00098 8.87416C5.29158 8.87416 4.6889 8.19615 4.6889 7.34235C4.6889 6.52623 5.2853 5.86077 6.00098 5.86077C6.72922 5.86077 7.31934 6.51367 7.31934 7.33608C7.31934 8.19615 6.71666 8.87416 6.00098 8.87416ZM2.54813 15.7296H7.42606C7.08078 15.5287 6.8485 15.0705 6.89244 14.6561H2.49163C2.37235 14.6561 2.32213 14.5996 2.32213 14.4929C2.32213 13.0552 4.00461 11.6867 5.9947 11.6867C6.69783 11.6867 7.40095 11.8624 7.94085 12.1638C8.1543 11.8562 8.41797 11.5925 8.76326 11.3665C7.96596 10.8768 6.97406 10.6131 5.9947 10.6131C3.33915 10.6131 1.19211 12.5091 1.19211 14.5933C1.19211 15.3467 1.64412 15.7296 2.54813 15.7296ZM9.36594 15.7296H17.1882C18.2743 15.7296 18.8016 15.3843 18.8016 14.6436C18.8016 12.9171 16.642 10.6194 13.2771 10.6194C9.91211 10.6194 7.75252 12.9171 7.75252 14.6436C7.75252 15.3843 8.27986 15.7296 9.36594 15.7296ZM9.16504 14.631C9.02065 14.631 8.96415 14.5808 8.96415 14.4678C8.96415 13.5073 10.5148 11.7181 13.2771 11.7181C16.0393 11.7181 17.59 13.5073 17.59 14.4678C17.59 14.5808 17.5335 14.631 17.3828 14.631H9.16504Z" fill="white"/>
+                <path d="M13.2771 9.81585C14.7963 9.81585 16.0268 8.47865 16.0268 6.83384C16.0268 5.21415 14.8026 3.9209 13.2771 3.9209C11.7704 3.9209 10.5273 5.23298 10.5273 6.8464C10.5336 8.48493 11.7641 9.81585 13.2771 9.81585ZM6.00098 9.96024C7.32562 9.96024 8.39286 8.78627 8.39286 7.33608C8.39286 5.92355 7.32562 4.78097 6.00098 4.78097C4.6889 4.78097 3.60282 5.94238 3.6091 7.34235C3.6091 8.79255 4.68262 9.96024 6.00098 9.96024ZM13.2771 8.71722C12.4107 8.71722 11.6762 7.90109 11.6762 6.84012C11.6762 5.81682 12.4044 5.01953 13.2771 5.01953C14.156 5.01953 14.8779 5.80427 14.8779 6.83384C14.8779 7.88853 14.1497 8.71722 13.2771 8.71722ZM6.00098 8.87416C5.29158 8.87416 4.6889 8.19615 4.6889 7.34235C4.6889 6.52623 5.2853 5.86077 6.00098 5.86077C6.72922 5.86077 7.31934 6.51367 7.31934 7.33608C7.31934 8.19615 6.71666 8.87416 6.00098 8.87416ZM2.54813 15.7296H7.42606
+
+V14.3008C7.42606 13.7387 7.12279 13.201 6.6141 12.8458C5.51595 12.0517 3.28125 12.0517 2.18311 12.8458C1.67442 13.201 1.37115 13.7387 1.37115 14.3008V15.7296H2.54813ZM2.54813 14.6309V14.3008C2.54813 14.0302 2.67731 13.778 2.90247 13.6176C3.57462 13.1333 5.22218 13.127 5.90061 13.6176C6.11904 13.778 6.24822 14.0302 6.24822 14.3008V14.6309H2.54813ZM8.91838 15.7296H13.7963V14.3008C13.7963 13.7387 13.493 13.201 12.9844 12.8458C11.879 12.0517 9.64425 12.0517 8.5461 12.8458C8.03741 13.201 7.73413 13.7387 7.73413 14.3008V15.7296H8.91838ZM8.91838 14.6309V14.3008C8.91838 14.0302 9.04756 13.778 9.27272 13.6176C9.94487 13.1333 11.5924 13.127 12.2708 13.6176C12.4893 13.778 12.6184 14.0302 12.6184 14.3008V14.6309H8.91838Z" fill="white"/>
                 </svg>
             `;
-            let applicantsElements = document.getElementsByClassName('jobs-premium-applicant-insights__list-num');
-            console.log("length: ", applicantsElements.length)
-            let total_applicants = applicantsElements.length > 0 ? applicantsElements[0].innerText : "err_no_premium";
-            if(total_applicants == "err_no_premium"){
-                const applicantElements = document.querySelectorAll('.job-details-jobs-unified-top-card__primary-description-without-tagline .tvm__text--neutral');
-                if (applicantElements.length > 0) {
-                    const lastApplicantElement = applicantElements[applicantElements.length - 1];
-                    total_applicants = lastApplicantElement.textContent.trim();
-                } 
-                else {
-                    total_applicants = "No applicant info"
-                }
-            }
-            var applicantsText = document.createElement('h4');
-            applicantsText.id = "applicantsText"
-            applicantsText.innerText = total_applicants + " Applicants";
+            var applicantsText = document.createElement('p');
+            applicantsText.textContent = response.applicants;
             applicantsText.style.cssText = `
                 color: #FFFFFF;
                 font-weight: bold;
@@ -233,95 +224,101 @@ function analyze() {
             `;
             applicantsData.appendChild(applicantsImage);
             applicantsData.appendChild(applicantsText);
-
+            
             var experienceData = document.createElement('div');
-                experienceData.style.cssText = `
-                    display: flex;
-                    align-items: center;
-                    margin-left: 5px;
-                `;
-                var experienceImage = document.createElement('a');
-                experienceImage.innerHTML = `
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M4.90238 15.8739H15.0977C16.4474 15.8739 17.138 15.1959 17.138 13.8587V7.70637C17.138 6.37545 16.4474 5.69116 15.0977 5.69116H13.7605V5.0257C13.7605 4.06519 13.1453 3.4939 12.0969 3.4939H7.90322C6.85481 3.4939 6.23957 4.06519 6.23957 5.0257V5.69116H4.90238C3.55891 5.69116 2.86206 6.37545 2.86206 7.70637V13.8587C2.86206 15.1959 3.55891 15.8739 4.90238 15.8739ZM7.41354 5.08848C7.41354 4.76203 7.63954 4.55486 7.98483 4.55486H12.0152C12.3668 4.55486 12.5865 4.76203 12.5865 5.08848V5.69116H7.41354V5.08848ZM4.11136 7.74404C4.11136 7.17902 4.40642 6.89652 4.9526 6.89652H15.0475C15.5936 6.89652 15.8824 7.17902 15.8824 7.74404V8.56644C14.1497 9.16284 12.1596 9.4579 10 9.4579C7.84044 9.4579 5.85034 9.16284 4.11136 8.56644V7.74404ZM4.9526 14.6686C4.40642 14.6686 4.11136 14.3923 4.11136 13.821V9.77808C5.39833 10.1673 6.79831 10.4184 8.25478 10.5251V11.0211C8.25478 11.4982 8.53101 11.7619 9.02068 11.7619H10.9794C11.4691 11.7619 11.739 11.4982 11.739 11.0211V10.5251C13.2018 10.4184 14.5955 10.1673 15.8824 9.77808V13.821C15.8824 14.3923 15.5936 14.6686 15.0475 14.6686H4.9526Z" fill="white"/>
-                    </svg>
-                `;
-                var experienceText = document.createElement('h4');
-                experienceText.id = "experienceText"
-                experienceText.innerText = response.experience + " years experience";
-                experienceText.style.cssText = `
-                    color: #FFFFFF;
-                    font-weight: bold;
-                    font-size: 12px;
-                    display: flex;
-                    margin-left: 5px;
-                `;
-                experienceData.appendChild(experienceImage);
-                experienceData.appendChild(experienceText);
+            experienceData.style.cssText = `
+                display: flex;
+                align-items: center;
+                margin-left: 5px;
+            `;
+            var experienceImage = document.createElement('a');
+            experienceImage.innerHTML = `
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99967 2.5C5.85796 2.5 2.5 5.85796 2.5 9.99967C2.5 14.1414 5.85796 17.4993 9.99967 17.4993C14.1414 17.4993 17.4993 14.1414 17.4993 9.99967C17.4993 5.85796 14.1414 2.5 9.99967 2.5ZM9.16602 10.1709L9.16602 6.85352H10.8333L10.8333 9.44949L13.416 9.44949L13.416 11.1168L9.16602 11.1168L9.16602 10.1709ZM9.99967 3.66667C6.59212 3.66667 3.66634 6.59246 3.66634 9.99999C3.66634 13.4075 6.59212 16.3333 9.99967 16.3333C13.4072 16.3333 16.333 13.4075 16.333 9.99999C16.333 6.59246 13.4072 3.66667 9.99967 3.66667Z" fill="white"/>
+                </svg>
+            `;
+            var experienceText = document.createElement('p');
+            experienceText.textContent = response.experience;
+            experienceText.style.cssText = `
+                color: #FFFFFF;
+                font-weight: bold;
+                font-size: 12px;
+                display: flex;
+                margin-left: 5px;
+            `;
+            experienceData.appendChild(experienceImage);
+            experienceData.appendChild(experienceText);
+            
+            var sponsorData = document.createElement('div');
+            sponsorData.style.cssText = `
+                display: flex;
+                align-items: center;
+                margin-left: 5px;
+            `;
+            var sponsorImage = document.createElement('a');
+            sponsorImage.innerHTML = `
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M12.2253 3.55543L16.5446 7.88103C16.6674 8.00386 16.6674 8.19982 16.5446 8.32261L12.2253 12.6482C12.0946 12.779 11.8887 12.779 11.7659 12.6482L10.4376 11.3199C10.308 11.1903 10.308 10.9807 10.4376 10.8512L12.2998 8.99982H7.66687C6.8173 8.99982 6.11687 9.70025 6.11687 10.5498V15.1832C6.11687 15.3764 5.95967 15.5336 5.76687 15.5336H4.21687C4.02407 15.5336 3.86687 15.3764 3.86687 15.1832V10.5498C3.86687 8.73911 5.45619 7.14982 7.26687 7.14982H12.2998L10.4376 5.29847C10.308 5.1689 10.308 4.95925 10.4376 4.82968L11.7659 3.50143C11.8887 3.37064 12.0946 3.37064 12.2253 3.50143Z" fill="white"/>
+                </svg>
+            `;
+            var sponsorText = document.createElement('p');
+            sponsorText.textContent = response.sponsor;
+            sponsorText.style.cssText = `
+                color: #FFFFFF;
+                font-weight: bold;
+                font-size: 12px;
+                display: flex;
+                margin-left: 5px;
+            `;
+            sponsorData.appendChild(sponsorImage);
+            sponsorData.appendChild(sponsorText);
+            
+            var clearanceData = document.createElement('div');
+            clearanceData.style.cssText = `
+                display: flex;
+                align-items: center;
+                margin-left: 5px;
+            `;
+            var clearanceImage = document.createElement('a');
+            clearanceImage.innerHTML = `
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 2.5C5.85797 2.5 2.5 5.85797 2.5 10C2.5 12.3864 3.64589 14.515 5.46961 15.7789L5.46954 16.7093L5.46954 16.7321C5.46954 16.8327 5.4828 16.9224 5.50396 16.9985C5.54285 17.1455 5.61705 17.2834 5.72789 17.3942C5.84789 17.5142 6.00733 17.6007 6.21302 17.6631C6.42159 17.7263 6.71132 17.7596 7.10451 17.7596L12.8955 17.7596C13.2887 17.7596 13.5784 17.7263 13.787 17.6631C13.9927 17.6007 14.1521 17.5142 14.2721 17.3942C14.383 17.2834 14.4572 17.1455 14.4961 16.9985C14.5172 16.9224 14.
 
-                var sponsorData = document.createElement('div');
-                sponsorData.style.display = 'flex';
-                sponsorData.style.alignItems = 'center';
-                sponsorData.style.marginLeft = '5px';
-
-                var sponsorImage = document.createElement('a');
-                sponsorImage.innerHTML = `
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M17.8851 9.75307C17.8788 9.01228 16.868 8.42843 15.6313 8.42843H13.0511C12.6995 8.42843 12.5677 8.36565 12.3542 8.13337L8.09781 3.53167C7.9597 3.381 7.79647 3.30566 7.61441 3.30566H6.80457C6.64134 3.30566 6.54717 3.45633 6.62251 3.62584L8.82605 8.42215L5.60549 8.77999L4.45663 6.7334C4.36874 6.57645 4.2369 6.50739 4.02973 6.50739H3.74723C3.57772 6.50739 3.46472 6.6204 3.46472 6.7899V12.7162C3.46472 12.8857 3.57772 12.9987 3.74723 12.9987H4.02973C4.2369 12.9987 4.36874 12.9297 4.45663 12.7727L5.60549 10.7199L8.82605 11.084L6.62251 15.8803C6.54717 16.0498 6.64134 16.2005 6.80457 16.2005H7.61441C7.79647 16.2005 7.9597 16.1189 8.09781 15.9745L12.3542 11.3728C12.5677 11.1405 12.6995 11.0777 13.0511 11.0777H15.6313C16.868 11.0777 17.8788 10.4876 17.8851 9.75307Z" fill="white"/>
-                    </svg>
-                `;
-                var sponsorText = document.createElement('h4');
-                sponsorText.id = "sponsor_text"
-                sponsorText.innerText = response.sponsorship;
-                sponsorText.style.cssText = `
-                    color: #FFFFFF;
-                    font-weight: bold;
-                    font-size: 12px;
-                    display: flex;
-                    margin-left: 5px;
-                `;
-                sponsorData.appendChild(sponsorImage);
-                sponsorData.appendChild(sponsorText);
-                
-                
-                var clearanceData = document.createElement('div');
-                clearanceData.style.cssText = `
-                    display: flex;
-                    align-items: center;
-                    margin-left: 5px;
-                `;
-                var clearanceImage = document.createElement('a');
-                clearanceImage.innerHTML = `
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M9.96865 16.2946C10.0816 16.2946 10.2512 16.2569 10.4144 16.169C14.0242 14.204 15.2797 13.2937 15.2797 11.0086V6.26876C15.2797 5.51542 14.991 5.24547 14.3569 4.97552C13.6663 4.68045 11.3184 3.86433 10.6404 3.63205C10.4269 3.56299 10.1884 3.51904 9.96865 3.51904C9.7552 3.51904 9.51036 3.57554 9.30319 3.63205C8.62517 3.82666 6.27724 4.68673 5.58667 4.97552C4.9526 5.23919 4.66382 5.51542 4.66382 6.26876V11.0086C4.66382 13.2937 5.9194 14.1915 9.52919 16.169C9.69242 16.2569 9.86192 16.2946 9.96865 16.2946ZM9.96865 14.9637C9.88075 14.9637 9.79286 14.9323 9.6108 14.8193C6.74808 13.074 5.85662 12.6032 5.85662 10.7763V6.46966C5.85662 6.24365 5.90056 6.15576 6.07635 6.08043C7.00548 5.71003 8.80723 5.11363 9.63592 4.78718C9.78031 4.73696 9.88075 4.71812 9.96865 4.71812C10.0628 4.71812 10.1633 4.73696 10.3077 4.78718C11.1363 5.11363 12.9255 5.7477 13.8609 6.08043C14.043 6.14948 14.0869 6.24365 14.0869 6.46966V10.7763C14.0869 12.6157 13.1578 13.1117 10.3328 14.8193C10.1507 14.9323 10.0628 14.9637 9.96865 14.9637ZM9.29691 12.5592C9.52919 12.5592 9.72381 12.4462 9.85564 12.239L12.687 7.83196C12.7749 7.70013 12.8439 7.54946 12.8439 7.40506C12.8439 7.09117 12.5677 6.884 12.2664 6.884C12.078 6.884 11.9085 6.99072 11.7767 7.20417L9.27808 11.1906L8.11039 9.71533C7.95972 9.52072 7.80905 9.45166 7.62699 9.45166C7.31309 9.45166 7.06825 9.70278 7.06825 10.0167C7.06825 10.1673 7.12476 10.3055 7.23148 10.4436L8.71306 12.2453C8.88257 12.4588 9.06463 12.5592 9.29691 12.5592Z" fill="white"/>
-                    </svg>
-                `;
-                var clearanceText = document.createElement('h4');
-                clearanceText.id = "clearanceText"
-                clearanceText.innerText = response.security_clearance;
-                clearanceText.style.cssText = `
-                    color: #FFFFFF;
-                    font-weight: bold;
-                    font-size: 12px;
-                    display: flex;
-                    margin-left: 5px;
-                `;
-                clearanceData.appendChild(clearanceImage);
-                clearanceData.appendChild(clearanceText);
-                leftBody.innerHTML = '';
-                leftBody.appendChild(applicantsData);
-                leftBody.appendChild(experienceData);
-                leftBody.appendChild(sponsorData);
-                leftBody.appendChild(clearanceData);
-                let right_div = document.getElementById('right_div');
-                right_div.innerHTML = '';
-                loadAnalysisRight(response)
-        })
-        .catch(error => {
-            alert(error)
-            let right_div = document.getElementById('right_div');
-            right_div.innerHTML = '';
+5305 16.8327 14.5305 16.7321L14.5305 16.7093L14.5304 15.7788C16.3541 14.5149 17.5 12.3863 17.5 10C17.5 5.85797 14.142 2.5 10 2.5ZM10 3.66667C6.59244 3.66667 3.66667 6.59244 3.66667 10C3.66667 12.1586 4.8844 14.0192 6.6861 14.9627C6.8168 15.0323 6.89554 15.1731 6.89554 15.3259L6.89554 16.5179C6.89554 16.5338 6.89828 16.5526 6.90702 16.575C6.91572 16.5972 6.92936 16.6173 6.94678 16.6294C6.96246 16.6403 6.98084 16.6462 7.10451 16.6462L12.8955 16.6462C13.0192 16.6462 13.0375 16.6403 13.0532 16.6294C13.0706 16.6173 13.0842 16.5972 13.093 16.575C13.1017 16.5526 13.1045 16.5338 13.1045 16.5179L13.1045 15.3259C13.1045 15.1731 13.1832 15.0323 13.3139 14.9627C15.1156 14.0192 16.3333 12.1586 16.3333 10C16.3333 6.59244 13.4076 3.66667 10 3.66667ZM10 6.73336C9.54182 6.73336 9.16667 7.10852 9.16667 7.5667L9.16667 10.8334C9.16667 11.2915 9.54182 11.6667 10 11.6667C10.4582 11.6667 10.8333 11.2915 10.8333 10.8334L10.8333 7.5667C10.8333 7.10852 10.4582 6.73336 10 6.73336ZM11.5 14.5C11.5 14.9604 11.0381 15.3333 10.5 15.3333C9.96186 15.3333 9.5 14.9604 9.5 14.5C9.5 14.0396 9.96186 13.6667 10.5 13.6667C11.0381 13.6667 11.5 14.0396 11.5 14.5Z" fill="white"/>
+                </svg>
+            `;
+            var clearanceText = document.createElement('p');
+            clearanceText.textContent = response.clearance;
+            clearanceText.style.cssText = `
+                color: #FFFFFF;
+                font-weight: bold;
+                font-size: 12px;
+                display: flex;
+                margin-left: 5px;
+            `;
+            clearanceData.appendChild(clearanceImage);
+            clearanceData.appendChild(clearanceText);
+            
             let leftBody = document.getElementById("leftBody")
-            leftBody.innerHTML = '';
-        });
+            if (!leftBody) {
+                return;
+            }
+            leftBody.innerHTML = "";
+            analysisBTN.textContent = 'View';
+            analysisBTN.addEventListener('click', () => {
+                if (analysisBTN.textContent === 'View'){
+                    analysisBTN.textContent = 'Hide';
+                    leftBody.appendChild(applicantsData);
+                    leftBody.appendChild(experienceData);
+                    leftBody.appendChild(sponsorData);
+                    leftBody.appendChild(clearanceData);
+                } else {
+                    analysisBTN.textContent = 'View';
+                    leftBody.innerHTML = '';
+                    leftBody.appendChild(analysisBTN);
+                }
+            });
+            leftBody.appendChild(analysisBTN);
+            loadAnalysisRight(response)
+        })
 }

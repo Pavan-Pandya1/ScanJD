@@ -73,7 +73,7 @@ Scan JD is a free Chrome extension designed to relieve your job search frustrati
 
 I'd like to thank my friends 
 [@patel-dhaval](https://github.com/patel-dhaval), [@namankhurpia](https://github.com/namankhurpia)
-, [@MOHIT02082000](https://github.com/MOHIT02082000), [@Pavan-Pandya1](https://github.com/Pavan-Pandya1) for their invaluable contributions in developing SCAN JD
+, [@MOHIT02082000](https://github.com/MOHIT02082000), [@kashyapsoni3010](https://github.com/kashyapsoni3010)for their invaluable contributions in developing SCAN JD
 
 ## Troubleshooting
 Feel free to reach out to me at kashyapd@buffalo.edu for any issues. Mostly refreshing the page should solve almost all the errors, for any errors or bugs, kindly contact kashyapd@buffalo.edu
