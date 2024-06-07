@@ -44,13 +44,13 @@ Scan JD is a free Chrome extension designed to relieve your job search frustrati
 
 4. Pull the docker image:
     ```bash
-    docker pull Pavan-Pandya1/scanjd:latest
+    docker pull pjpandya/scanjd:latest
     ```
 
 5. Run the container:
     - USE FREE MODEL - COHERE COMMAND R
     ```bash
-    docker run -d -p 8004:8004 -e API_KEY="cohere_api_key" -e MODEL="cohere" --name scanjd_instance kashyapsoni3010/scanjd
+    docker run -d -p 8004:8004 -e API_KEY="cohere_api_key" -e MODEL="cohere" --name scanjd_instance pjpandya/scanjd
     ```
     - USE OPEN AI - PAID MODEL
     ```bash
