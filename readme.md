@@ -44,7 +44,7 @@ Scan JD is a free Chrome extension designed to relieve your job search frustrati
 
 4. Pull the docker image:
     ```bash
-    docker pull kashyapsoni3010/scanjd:latest
+    docker pull Pavan-Pandya1/scanjd:latest
     ```
 
 5. Run the container:
@@ -76,4 +76,4 @@ I'd like to thank my friends
 , [@MOHIT02082000](https://github.com/MOHIT02082000), [@kashyapsoni3010](https://github.com/kashyapsoni3010)for their invaluable contributions in developing SCAN JD
 
 ## Troubleshooting
-Feel free to reach out to me at kashyapd@buffalo.edu for any issues. Mostly refreshing the page should solve almost all the errors, for any errors or bugs, kindly contact kashyapd@buffalo.edu
+Feel free to reach out to me at pjpandya@syr.edu for any issues. Mostly refreshing the page should solve almost all the errors, for any errors or bugs, kindly contact pjpandya@syr.edu
